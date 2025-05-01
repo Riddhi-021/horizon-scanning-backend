@@ -1,5 +1,3 @@
-# fetch_news.py
-
 import feedparser
 import pandas as pd
 
@@ -26,9 +24,10 @@ def fetch_google_news(query, max_articles=20):
 def save_articles_to_csv(articles, filename="news_articles.csv"):
     df = pd.DataFrame(articles)
     df.to_csv(filename, index=False)
-    print(f"Saved {len(articles)} articles to {filename}")
+    print(f"✅ Saved {len(articles)} articles to {filename}")
 
+# Optional manual test
 if __name__ == "__main__":
-    query = input("Enter a topic for news search: ")  # e.g., "AI market trends"
+    query = input("Enter a topic for news search: ")
     news = fetch_google_news(query, max_articles=20)
     save_articles_to_csv(news)
