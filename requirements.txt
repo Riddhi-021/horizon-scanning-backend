@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 fastapi
 uvicorn
 feedparser
-=======
-fastapi
-uvicorn
-feedparser
->>>>>>> b61fc00f52af2b45c4b184956ce861b8f5aff372
+pandas
+apscheduler
